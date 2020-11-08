@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b253e261-4c7e-43df-bf14-7f31f7d6df42" created="3.3.1" activeEnvironment="Default environment" name="PetsStores" updated="3.3.1 2020-07-22T12:07:58Z" encryptionMode="Not encrypted" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="f3664a86-9b17-4a00-9346-b0dd58158fe4" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://petstore.swagger.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://petstore.swagger.io</con:endpoint></con:endpoints><con:resource name="10" path="/v2/pet/{Id}" id="3b71da59-e326-4377-82fa-25bd2fe34062"><con:settings/><con:parameters><con:parameter><con:name>Id</con:name><con:value>10</con:value><con:style>TEMPLATE</con:style><con:default>10</con:default></con:parameter></con:parameters><con:method name="10" id="774f140d-ad0a-41db-8cba-4682b8548384" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://petstore.swagger.io/v2/pet/10">ns:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>405</con:status><con:params/><con:element>apiResponse</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:ns="https://petstore.swagger.io/v2/pet/10">ns:Fault</con:element></con:representation><con:request name="Request 1" id="78c2cee4-e02e-4890-b3e0-e85708ea933c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request/><con:originalUri>https://petstore.swagger.io/v2/pet/10</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry>Id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c92cf2ae-5498-4f51-9361-ca3aa5940b15" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://petstore.swagger.io 1" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://petstore.swagger.io</con:endpoint></con:endpoints><con:resource name="Pet" path="/v2/pet" id="0445d668-519c-4f1a-9e57-f692799c8632"><con:settings/><con:parameters/><con:method name="Pet" id="9aa2e41d-bdc6-4830-952a-926a0eae5274" method="POST"><con:settings/><con:parameters><con:parameter><con:name/><con:style>QUERY</con:style></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>405 500</con:status><con:params/><con:element xmlns:pet="https://petstore.swagger.io/v2/pet">pet:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pet="https://petstore.swagger.io/v2/pet">pet:Response</con:element></con:representation><con:request name="Request 1" id="d9156904-eb13-46b0-8745-af8a99647b57" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request>{
+  "id": 5555,
+  "category": {
+    "id": 5555,
+    "name": "Tommy"
+  },
+  "name": "Tommy",
+  "photoUrls": [
+    "Tommy"
+  ],
+  "tags": [
+    {
+      "id": 5555,
+      "name": "Tommy"
+    }
+  ],
+  "status": "available"
+}</con:request><con:originalUri>https://petstore.swagger.io/v2/pet</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="190160fb-82f1-43a2-affb-0ad4827870f2" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://petstore.swagger.io 2" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://petstore.swagger.io</con:endpoint></con:endpoints><con:resource name="Pet" path="/v2/pet" id="9bfe7cd5-51ca-46f7-9670-7e421c45cb71"><con:settings/><con:parameters/><con:method name="Pet" id="cf67b957-8402-4487-ac12-92f4fe25dafb" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pet="https://petstore.swagger.io/v2/pet">pet:Response</con:element></con:representation><con:request name="Request 1" id="31e5bd6f-3e11-429c-b6ec-ac703c63834b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request>{
+  "id": 5555,
+  "category": {
+    "id": 5555,
+    "name": "Tommy"
+  },
+  "name": "Tommy",
+  "photoUrls": [
+    "Tommy"
+  ],
+  "tags": [
+    {
+      "id": 5555,
+      "name": "Tommy"
+    }
+  ],
+  "status": "sold"
+}</con:request><con:originalUri>https://petstore.swagger.io/v2/pet</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="b9d480a4-4ee4-415c-9ca8-122e80c81e7c" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://petstore.swagger.io 3" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://petstore.swagger.io</con:endpoint></con:endpoints><con:resource name="5555" path="/v2/pet/5555" id="5b714518-ff2d-4d3f-80c3-34680514ae07"><con:settings/><con:parameters/><con:method name="5555" id="227cb771-eb3f-44bc-901d-701e2bce252c" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://petstore.swagger.io/v2/pet/5555">ns:Response</con:element></con:representation><con:request name="Request 1" id="1b9c6cac-7229-4668-87e1-049d59122bc7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request/><con:originalUri>https://petstore.swagger.io/v2/pet/5555</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="a8590616-5af6-4b6c-a6a5-0a82ee3a0211" name="GetTestSuite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="31b50e52-af81-422a-948b-dc7a0731dfae" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get1" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST Request" id="5a156a40-18de-4d4f-b0be-b0f92b141b95"><con:settings/><con:config service="https://petstore.swagger.io" resourcePath="/v2/pet/{Id}" methodName="10" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="78c2cee4-e02e-4890-b3e0-e85708ea933c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request/><con:originalUri>https://petstore.swagger.io/v2/pet/10</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="28c66b8a-705d-4c86-a2ee-63ed8155aca6" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="a4b96ec3-5d43-4e94-a81a-543557dbf31f" name="Response SLA"><con:configuration><SLA>10000</SLA></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="008b81ea-7ec5-4466-83e5-f83e3dab0535" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/10';
+//ns1:Response[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>10</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/10';
+//ns1:Response[1]/ns1:category[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>0</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/10';
+//ns1:Response[1]/ns1:category[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>parrots</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/10';
+//ns1:Response[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>janu</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/10';
+//ns1:Response[1]/ns1:photoUrls[1]/ns1:e[1]</con:xpath><con:element>e</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>parrot pets</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/10';
+//ns1:Response[1]/ns1:tags[1]/ns1:e[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>20</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/10';
+//ns1:Response[1]/ns1:tags[1]/ns1:e[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>janu</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/10';
+//ns1:Response[1]/ns1:status[1]</con:xpath><con:element>status</con:element><con:type xsi:nil="true"/><con:operator>contains</con:operator><con:enabled>true</con:enabled><con:expectedValue>available</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://petstore.swagger.io/v2/pet/10">
+   <id>10</id>
+   <category>
+      <id>0</id>
+      <name>parrots</name>
+   </category>
+   <name>janu</name>
+   <photoUrls>
+      <e>parrot pets</e>
+   </photoUrls>
+   <tags>
+      <e>
+         <id>20</id>
+         <name>janu</name>
+      </e>
+   </tags>
+   <status>available</status>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry>Id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="13b4b375-0f8d-43a9-acd3-9acd104f7fd6" name="PostTestSuite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="a923884c-7b73-40e6-b641-926f9970036d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Post1" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST Request" id="3a8dcbad-b712-4292-9bd3-2ac3ec3ff432"><con:settings/><con:config service="https://petstore.swagger.io 1" resourcePath="/v2/pet" methodName="Pet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="d9156904-eb13-46b0-8745-af8a99647b57" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request>{
+  "id": 5555,
+  "category": {
+    "id": 5555,
+    "name": "Tommy"
+  },
+  "name": "Tommy",
+  "photoUrls": [
+    "Tommy"
+  ],
+  "tags": [
+    {
+      "id": 5555,
+      "name": "Tommy"
+    }
+  ],
+  "status": "available"
+}</con:request><con:originalUri>https://petstore.swagger.io/v2/pet</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="06de45ba-b1f6-400f-b5de-6b98ab8a5a9c" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="5ac932aa-8e8b-4882-8181-48840f7d4359" name="Response SLA"><con:configuration><SLA>10000</SLA></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="b50a6213-0220-4ef4-a327-b1c9fd0935fd" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>5555</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:category[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>contains</con:operator><con:enabled>true</con:enabled><con:expectedValue>5555</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:category[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>Tommy</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>Tommy</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:photoUrls[1]/ns1:e[1]</con:xpath><con:element>e</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>Tommy</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:tags[1]/ns1:e[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>5555</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:tags[1]/ns1:e[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>Tommy</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:status[1]</con:xpath><con:element>status</con:element><con:type xsi:nil="true"/><con:operator>contains</con:operator><con:enabled>true</con:enabled><con:expectedValue>available</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://petstore.swagger.io/v2/pet">
+   <id>5555</id>
+   <category>
+      <id>5555</id>
+      <name>Tommy</name>
+   </category>
+   <name>Tommy</name>
+   <photoUrls>
+      <e>Tommy</e>
+   </photoUrls>
+   <tags>
+      <e>
+         <id>5555</id>
+         <name>Tommy</name>
+      </e>
+   </tags>
+   <status>available</status>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="62d2dec2-297d-44dc-942e-2a63a58d32ae" name="PutTestSuite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="d0603cce-cd89-40bb-9210-c1061ebd23d1" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Put1" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST Request" id="676af535-d1b8-44b1-89a7-1e39538202e4"><con:settings/><con:config service="https://petstore.swagger.io 2" resourcePath="/v2/pet" methodName="Pet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="31e5bd6f-3e11-429c-b6ec-ac703c63834b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request>{
+  "id": 5555,
+  "category": {
+    "id": 5555,
+    "name": "Tommy"
+  },
+  "name": "Tommy",
+  "photoUrls": [
+    "Tommy"
+  ],
+  "tags": [
+    {
+      "id": 5555,
+      "name": "Tommy"
+    }
+  ],
+  "status": "sold"
+}</con:request><con:originalUri>https://petstore.swagger.io/v2/pet</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="74e652ad-2f3f-436d-885d-1f1820769d70" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="35dd27fc-a97f-4a4c-a76b-bd8d46ad2612" name="Response SLA"><con:configuration><SLA>10000</SLA></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="37df536d-9b32-4445-80ad-c351c13d0163" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>5555</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:category[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>5555</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:category[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>exists</con:operator><con:enabled>false</con:enabled><con:expectedValue>Tommy</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>exists</con:operator><con:enabled>false</con:enabled><con:expectedValue>Tommy</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:photoUrls[1]/ns1:e[1]</con:xpath><con:element>e</con:element><con:type xsi:nil="true"/><con:operator>exists</con:operator><con:enabled>false</con:enabled><con:expectedValue>Tommy</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:tags[1]/ns1:e[1]/ns1:id[1]</con:xpath><con:element>id</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>5555</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:tags[1]/ns1:e[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>exists</con:operator><con:enabled>false</con:enabled><con:expectedValue>Tommy</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet';
+//ns1:Response[1]/ns1:status[1]</con:xpath><con:element>status</con:element><con:type xsi:nil="true"/><con:operator>contains</con:operator><con:enabled>true</con:enabled><con:expectedValue>sold</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://petstore.swagger.io/v2/pet">
+   <id>5555</id>
+   <category>
+      <id>5555</id>
+      <name>Tommy</name>
+   </category>
+   <name>Tommy</name>
+   <photoUrls>
+      <e>Tommy</e>
+   </photoUrls>
+   <tags>
+      <e>
+         <id>5555</id>
+         <name>Tommy</name>
+      </e>
+   </tags>
+   <status>sold</status>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="26fb6e82-8c9b-4b56-9bde-259d10dcc341" name="DeleteTestSuite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="020e2f80-dcb1-4b2f-80ff-e82fb2dbccef" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Delete1" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST Request" id="95a838fb-d57b-47b1-b777-a7c11d9882a9"><con:settings/><con:config service="https://petstore.swagger.io 3" resourcePath="/v2/pet/5555" methodName="5555" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="1b9c6cac-7229-4668-87e1-049d59122bc7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request/><con:originalUri>https://petstore.swagger.io/v2/pet/5555</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="2937ea23-00ef-47c8-ba55-bc365f6fdac8" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="3cba90b7-ad96-42c7-8b9e-de9c3474d772" name="Response SLA"><con:configuration><SLA>10000</SLA></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="7755da54-dc1f-4339-9769-68b0868c9a19" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/5555';
+//ns1:Response[1]/ns1:code[1]</con:xpath><con:element>code</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>200</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/5555';
+//ns1:Response[1]/ns1:type[1]</con:xpath><con:element>type</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>unknown</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://petstore.swagger.io/v2/pet/5555';
+//ns1:Response[1]/ns1:message[1]</con:xpath><con:element>message</con:element><con:type xsi:nil="true"/><con:operator>contains</con:operator><con:enabled>true</con:enabled><con:expectedValue>5555</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://petstore.swagger.io/v2/pet/5555">
+   <code>200</code>
+   <type>unknown</type>
+   <message>5555</message>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script></con:eventHandlers><con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep"><con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script></con:eventHandlers><con:authRepository/><con:tags/></con:soapui-project>
